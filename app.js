@@ -39,4 +39,5 @@ io.on("connection", function (socket){
 server.listen(3000);
 app.get('/', function (req,res) {
     res.render("index");
+    console.log("Run");
 })
