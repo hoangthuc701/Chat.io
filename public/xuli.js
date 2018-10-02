@@ -1,4 +1,4 @@
-var socket = io("http://localhost:3000");
+var socket = io("https://chatwithm.herokuapp.com");
 socket.on("register-fail", function (){
     alert("This username has already used.");
 });
