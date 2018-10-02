@@ -36,8 +36,9 @@ io.on("connection", function (socket){
     });
 
 });
-server.listen(3000);
+const port=process.env.PORT || 3000
+server.listen(port);
 app.get('/', function (req,res) {
     res.render("index");
-    console.log("Run");
+    
 })
