@@ -36,6 +36,9 @@ $(document).ready(function (){
     $("#btnSend").click(function(){
         socket.emit("user-send-message",$("#textMessage").val());
     });
-    var textArea = $('#listMessages');
-    textArea.scrollTop( textArea[0].scrollHeight - textArea.height()   );
+    $(document).ready(function(){
+    var $textarea = $("#listMessages");
+    $textarea.scrollTop($textarea[0].scrollHeight);
+});
+
 });
